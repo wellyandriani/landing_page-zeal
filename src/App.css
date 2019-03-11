@@ -1,15 +1,24 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  height: 90%;
+}
 .App {
   text-align: center;
 }
 
 .App-logo {
   /* animation: App-logo-spin infinite 20s linear; */
-  height: 40vmin;
+  height: 35vmin;
   pointer-events: none;
 }
 
 .App-header {
+  background: url(./images/bg.jpg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,20 +30,20 @@
 
 
 .font_0 {
-  font: normal normal bold 90px/1.1em opensanshebrewcondensed-regular,sans-serif;
+  font: normal normal bold 85px/1.1em opensanshebrewcondensed-regular,sans-serif;
   color: rgb(12, 5, 5);
   margin-top: -40px;
 }
+
+@media only screen and (max-width: 767px) {
+  .font_0 {
+    font: normal normal bold 30px/1.1em opensanshebrewcondensed-regular,sans-serif;    
+    margin-bottom: 50px;
+    margin-top: -60px;
+  }}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

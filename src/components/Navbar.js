@@ -9,6 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Home from '@material-ui/icons/Home';
 import Contact from '@material-ui/icons/ContactPhone';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import { Button } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -85,18 +86,21 @@ class PrimarySearchAppBar extends React.Component {
         onClose={this.handleMenuClose}
         
       >
-        <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="black">
+        <MenuItem onClick={this.handleProfileMenuOpen} >
+          <Button  href="#home">
               <Home />
-          </IconButton>
-          <p>Home</p>
+              <p>Home</p>
+          </Button>
         </MenuItem>
-        <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="black">
+
+        <MenuItem onClick={this.handleProfileMenuOpen} >
+          <Button href="#contact" >
               <Contact />
-          </IconButton>
-          <p>Contact</p>
+              <p>Contact</p>
+          </Button>
         </MenuItem>
+       
+
       </Menu>
     );
 
@@ -106,12 +110,14 @@ class PrimarySearchAppBar extends React.Component {
           <Toolbar>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <IconButton color="black" className={classes.font}>
-                  <Home /> Home
-              </IconButton>
-              <IconButton color="black" className={classes.font}>
-                  <Contact /> Contact
-              </IconButton>
+              <Button color="black" className={classes.font} href="#home">
+                  <Home /> 
+                  <p>Home</p>
+              </Button>
+              <Button color="black" className={classes.font} href="#contact">
+                  <Contact /> 
+                  <p>Contact</p>
+              </Button>
             </div>
             <div className={classes.sectionMobile}>
               <IconButton aria-haspopup="true" onClick={this.handleMobileMenuOpen} color="black">
