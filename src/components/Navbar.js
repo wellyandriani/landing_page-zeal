@@ -108,7 +108,7 @@ class PrimarySearchAppBar extends React.Component {
         <AppBar position="fixed" color="inherit" >
           <Toolbar className="container">
           <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-          <img src={logo} alt="logo" style={{width:'54px'}}/>
+          <img src={logo} alt="logo" style={{width:'48px', marginTop:'7px'}}/>
             </Typography>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
