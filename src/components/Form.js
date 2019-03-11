@@ -80,31 +80,31 @@ class Form extends Component {
                marginTop={'50px'}
                marginButtom={'50px'}
              >
-              <form className={classes.container} noValidate autoComplete="off">
-                  <TextField
+              <form method="POST" action="https://formspree.io/cristinashuw@gmail.com" className={classes.container} noValidate autoComplete="off">
+                  <input type="text"
                     id="name"
                     label="Name"
                     className={classes.textField}
-                    value={this.state.name}
-                    onChange={this.handleChange('name')}
+                    name="name"
                     margin="normal"
                     variant="outlined"
                   />
 
-                  <TextField
+                  <input type="email"
                     id="email"
                     label="Email"
                     className={classes.textField}
-                    type="email"
+                    
                     name="email"
                     autoComplete="email"
                     margin="normal"
                     variant="outlined"
                   />
-              </form>
-              <Button variant="contained" color="default">
+              
+              <Button type="submit" variant="contained" color="default">
                 Subcribe
                 </Button>
+                </form>
           </Box>
           </ThemeProvider>
           </NoSsr>
