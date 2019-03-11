@@ -25,6 +25,7 @@ const styles = theme => ({
     container: {
       display: 'flex',
       flexWrap: 'wrap',
+      justify: 'center',
     },
     textField: {
       marginLeft: theme.spacing.unit,
@@ -80,8 +81,8 @@ class Form extends Component {
                marginTop={'50px'}
                marginButtom={'50px'}
              >
-              <form method="POST" action="https://formspree.io/cristinashuw@gmail.com" className={classes.container} noValidate autoComplete="off">
-                  <input type="text"
+              <form method="POST" action="https://formspree.io/zealclub1@gmail.com" className={classes.container} noValidate autoComplete="off" style={{justifyContent:'center'}}>
+                  <TextField type="text"
                     id="name"
                     label="Name"
                     className={classes.textField}
@@ -90,7 +91,7 @@ class Form extends Component {
                     variant="outlined"
                   />
 
-                  <input type="email"
+                  <TextField type="email"
                     id="email"
                     label="Email"
                     className={classes.textField}
@@ -100,11 +101,12 @@ class Form extends Component {
                     margin="normal"
                     variant="outlined"
                   />
-              
-              <Button type="submit" variant="contained" color="default">
-                Subcribe
-                </Button>
+                <br></br>
+                  <Button type="submit" variant="contained" color="default" style={{width:'80%'}}>
+                  Subcribe
+                  </Button>
                 </form>
+               
           </Box>
           </ThemeProvider>
           </NoSsr>
