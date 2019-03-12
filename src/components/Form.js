@@ -58,14 +58,14 @@ class Form extends Component {
     return (
         <div>
            <Grid container justify="center" alignItems="center" id="contact">
-            <Button href="mailto:zealclub1@gmail.com" target='blank'>
-              <img src={Email} alt="icon instagram" style={{width:'44px'}}/>    
+            <Button href="mailto:zealclub1@gmail.com" target='_blank'>
+              <img src={Email} alt="icon email" style={{width:'44px'}}/>    
             </Button>
-            <Button href="https://www.instagram.com/zeal.co.id/?utm_source=ig_profile_share&igshid=830zrl7dsipt" target='blank'>
+            <Button href="https://www.instagram.com/zealindonesia/" target='_blank'>
               <img src={Instagram} alt="icon instagram" style={{width:'65px'}}/>
             </Button>
-            <Button href="https://api.whatsapp.com/send?phone=6281363788777" target='blank'>
-            <img src={Whatsapp} alt="icon instagram" style={{width:'50px'}}/>
+            <Button href="https://api.whatsapp.com/send?phone=6281363788777" target='_blank'>
+            <img src={Whatsapp} alt="icon whatsapp" style={{width:'50px'}}/>
             </Button>
           </Grid>
           
